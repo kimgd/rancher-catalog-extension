@@ -52,7 +52,7 @@ version: '2'
       label: "LDAP_BASEDN:"
       description: |
         LDAP basedn
-      default: passwd
+      default: ou=People,dc=exapmle,dc=com
       required: false
       type: "string"
     - variable: "ldap_filter"
