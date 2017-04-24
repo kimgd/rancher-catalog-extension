@@ -34,14 +34,14 @@ version: '2'
       default: 10.22.1.61
       required: false
       type: "string"
-    - variable: "ldap_searhdn"
+    - variable: "ldap_searchdn"
       label: "LDAP_SEARCHDN:"
       description: |
         LDAP admin account
       default: releaseadmin
       required: false
       type: "string"
-    - variable: "ldap_searh_pwd"
+    - variable: "ldap_search_pwd"
       label: "LDAP_SEARCH_PWD:"
       description: |
         LDAP admin account password
@@ -51,15 +51,22 @@ version: '2'
     - variable: "ldap_basedn"
       label: "LDAP_BASEDN:"
       description: |
-        LDAP base dn
+        LDAP basedn
       default: passwd
+      required: false
+      type: "string"
+    - variable: "ldap_filter"
+      label: "LDAP_FILTER:"
+      description: |
+        LDAP filter
+      default: objectClass=*
       required: false
       type: "string"
     - variable: "ldap_uid"
       label: "LDAP_UID:"
       description: |
         LDAP uid
-      default: passwd
+      default: uid
       required: false
       type: "string"
     - variable: "harborhostlabel"
