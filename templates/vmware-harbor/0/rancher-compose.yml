@@ -20,55 +20,6 @@ version: '2'
       default: Vmware123!
       required: true
       type: "string"
-    - variable: "auth_mode"
-      label: "AUTH_MODE:"
-      description: |
-        Auth mode: db_auth or ldap_auth
-      default: ldap_auth
-      required: false
-      type: "string"
-    - variable: "ldap_url"
-      label: "LDAP_URL:"
-      description: |
-        LDAP url
-      default: 10.22.1.61
-      required: false
-      type: "string"
-    - variable: "ldap_searchdn"
-      label: "LDAP_SEARCHDN:"
-      description: |
-        LDAP admin account
-      default: releaseadmin
-      required: false
-      type: "string"
-    - variable: "ldap_search_pwd"
-      label: "LDAP_SEARCH_PWD:"
-      description: |
-        LDAP admin account password
-      default: passwd
-      required: false
-      type: "string"
-    - variable: "ldap_basedn"
-      label: "LDAP_BASEDN:"
-      description: |
-        LDAP basedn
-      default: ou=People,dc=exapmle,dc=com
-      required: false
-      type: "string"
-    - variable: "ldap_filter"
-      label: "LDAP_FILTER:"
-      description: |
-        LDAP filter
-      default: objectClass=*
-      required: false
-      type: "string"
-    - variable: "ldap_uid"
-      label: "LDAP_UID:"
-      description: |
-        LDAP uid
-      default: uid
-      required: false
-      type: "string"
     - variable: "harborhostlabel"
       label: "Harbor will be deployed on the host with this label (default: harbor-host=true)"
       description: |
