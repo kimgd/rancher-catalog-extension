@@ -47,7 +47,21 @@ version: '2'
         LDAP admin account password
       default: passwd
       required: false
-      type: "string"      
+      type: "string"
+    - variable: "ldap_basedn"
+      label: "LDAP_BASEDN:"
+      description: |
+        LDAP base dn
+      default: passwd
+      required: false
+      type: "string"
+    - variable: "ldap_uid"
+      label: "LDAP_UID:"
+      description: |
+        LDAP uid
+      default: passwd
+      required: false
+      type: "string"
     - variable: "harborhostlabel"
       label: "Harbor will be deployed on the host with this label (default: harbor-host=true)"
       description: |
