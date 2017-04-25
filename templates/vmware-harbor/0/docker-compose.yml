@@ -1,7 +1,7 @@
 version: '2'
 services:
   harbor-setupwrapper:
-    image: test/harbor-setupwrapper:0.5.0
+    image: set-ldap/harbor-setupwrapper:0.5.0
     container_name: harbor-setupwrapper
     environment:
       - HARBORHOSTNAME=${harborhostname}
