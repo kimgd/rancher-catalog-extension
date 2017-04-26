@@ -13,7 +13,7 @@ services:
       - LDAP_BASEDN=${ldap_basedn}
       - LDAP_FILTER=${ldap_filter}
       - LDAP_UID=${ldap_uid}
-      - LDAP_SCOPE=${ldap_socpe}     
+      - LDAP_SCOPE=${ldap_scope}     
     volumes:
       - /etc/registry
       - /etc/ui
