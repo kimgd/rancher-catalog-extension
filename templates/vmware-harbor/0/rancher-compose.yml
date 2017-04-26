@@ -58,8 +58,8 @@ version: '2'
     - variable: "ldap_filter"
       label: "ldap_filter"
       description: |
-        LDAP objectClass: (objectClass=person)
-      default: (objectClass=person)
+        LDAP objectClass: objectClass=person
+      default: objectClass=person
       required: true
       type: "string"
     - variable: "ldap_uid"
