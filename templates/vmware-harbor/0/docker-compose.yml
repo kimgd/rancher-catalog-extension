@@ -6,6 +6,14 @@ services:
     environment:
       - HARBORHOSTNAME=${harborhostname}
       - HARBOR_ADMIN_PASSWORD=${harbor_admin_password}
+      - AUTH_MODE=${auth_mode}
+      - LDAP_URL=${ldap_url}
+      - LDAP_SEARCHDN=${ldap_searchdn}
+      - LDAP_SEARCH_PWD=${ldap_search_pwd}
+      - LDAP_BASEDN=${ldap_basedn}
+      - LDAP_FILTER=${ldap_filter}
+      - LDAP_UID=${ldap_uid}
+      - LDAP_SCOPE=${ldap_socpe}     
     volumes:
       - /etc/registry
       - /etc/ui
