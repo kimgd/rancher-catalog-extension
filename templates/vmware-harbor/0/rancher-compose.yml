@@ -103,4 +103,4 @@ services:
     scale: 1
     start_on_create: true
   log:
-    scale: Global
+    scale: global
