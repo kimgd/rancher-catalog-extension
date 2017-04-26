@@ -17,9 +17,65 @@ version: '2'
       label: "Harbor password:"
       description: |
         Harbor admin password
-      default: Vmware123!
+      default: harbor12#
       required: true
       type: "string"
+    - variable: "auth_mode"
+      label: "auth_mode"
+      description: |
+        ldap_auth or db_auth
+      default: ldap_auth
+      required: true
+      type: "string"
+    - variable: "ldap_url"
+      label: "ldap_url"
+      description: |
+        LDAP(AD) server URL
+      default: ldap://10.22.1.61
+      required: true
+      type: "string"
+    - variable: "ldap_searchdn"
+      label: "ldap_searchdn"
+      description: |
+        LDAP admin account
+      default: admin 
+      required: true
+      type: "string"
+    - variable: "ldap_search_pwd"
+      label: "ldap_search_pwd"
+      description: |
+        LDAP admin account password
+      default: passwd12#
+      required: true
+      type: "string"
+    - variable: "ldap_basedn"
+      label: "ldap_basedn"
+      description: |
+        LDAP BASEDN: dc=v1,dc=v2
+      default: dc=v1,dc=v2
+      required: true
+      type: "string"
+    - variable: "ldap_filter"
+      label: "ldap_filter"
+      description: |
+        LDAP objectClass: (objectClass=person)
+      default: (objectClass=person)
+      required: true
+      type: "string"
+    - variable: "ldap_uid"
+      label: "ldap_uid"
+      description: |
+        LDAP uid: sAMAccountName
+      default: sAMAccountName
+      required: true
+      type: "string"
+    - variable: "ldap_scope"
+      label: "ldap_scope"
+      description: |
+        LDAP scope: 3
+      default: 3
+      required: true
+      type: "string"      
     - variable: "harborhostlabel"
       label: "Harbor will be deployed on the host with this label (default: harbor-host=true)"
       description: |
