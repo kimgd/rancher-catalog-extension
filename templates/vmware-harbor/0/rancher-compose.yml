@@ -52,7 +52,7 @@ version: '2'
       label: "ldap_basedn"
       description: |
         LDAP BASEDN: dc=skcomms,dc=net
-      default: dc=v1,dc=v2
+      default: dc=skcomms,dc=net
       required: true
       type: "string"
     - variable: "ldap_filter"
