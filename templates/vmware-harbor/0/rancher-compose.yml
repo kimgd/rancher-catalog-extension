@@ -38,7 +38,7 @@ version: '2'
       label: "ldap_searchdn"
       description: |
         LDAP admin account
-      default: admin 
+      default: releaseadmin 
       required: true
       type: "string"
     - variable: "ldap_search_pwd"
@@ -51,7 +51,7 @@ version: '2'
     - variable: "ldap_basedn"
       label: "ldap_basedn"
       description: |
-        LDAP BASEDN: dc=v1,dc=v2
+        LDAP BASEDN: dc=skcomms,dc=net
       default: dc=v1,dc=v2
       required: true
       type: "string"
@@ -77,21 +77,21 @@ version: '2'
       required: true
       type: "string"      
     - variable: "ui_url_protocol"
-      label: "choice http or https"
+      label: "ui_url_protocol"
       description: |
         http or https
       default: http
       required: true
       type: "string"
     - variable: "ssl_cert"
-      label: "ssl_cert loacation"
+      label: "ssl_cert"
       description: |
         ssl_cert location, star.skcomms.co.kr.crt
       default: /etc/pki/ca-trust/source/anchors/star.skcomms.co.kr.crt
       required: true
       type: "string"
     - variable: "ssl_cert_key"
-      label: "ssl_cert_key loacation"
+      label: "ssl_cert_key"
       description: |
         ssl_cert_key location, star.skcomms.co.kr.key
       default: /etc/pki/ca-trust/source/anchors/star.skcomms.co.kr.key
