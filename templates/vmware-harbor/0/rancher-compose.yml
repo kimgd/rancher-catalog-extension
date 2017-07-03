@@ -83,20 +83,6 @@ version: '2'
       default: http
       required: true
       type: "string"
-    - variable: "ssl_cert"
-      label: "ssl_cert"
-      description: |
-        ssl_cert location, star.skcomms.co.kr.crt
-      default: /etc/pki/ca-trust/source/anchors/star.skcomms.co.kr.crt
-      required: true
-      type: "string"
-    - variable: "ssl_cert_key"
-      label: "ssl_cert_key"
-      description: |
-        ssl_cert_key location, star.skcomms.co.kr.key
-      default: /etc/pki/ca-trust/source/anchors/star.skcomms.co.kr.key
-      required: true
-      type: "string"
     - variable: "harborhostlabel"
       label: "Harbor will be deployed on the host with this label (default: harbor-host=true)"
       description: |
