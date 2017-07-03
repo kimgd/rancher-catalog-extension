@@ -15,8 +15,6 @@ services:
       - LDAP_UID=${ldap_uid}
       - LDAP_SCOPE=${ldap_scope}
       - UI_URL_PROTOCOL=${ui_url_protocol}
-      - SSL_CERT=${ssl_cert}
-      - SSL_CERT_KEY=${ssl_cert_key}
     volumes:
       - /etc/registry
       - /etc/ui
