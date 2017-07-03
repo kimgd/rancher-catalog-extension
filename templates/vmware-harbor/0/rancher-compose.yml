@@ -80,6 +80,8 @@ version: '2'
       label: "ui_url_protocol"
       description: |
         http or https
+        When you set https,
+        In addition, you must insert the .cert and .key files in the harbor-setupwrapper image.
       default: http
       required: true
       type: "string"
